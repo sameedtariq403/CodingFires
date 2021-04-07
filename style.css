@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.background {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.background img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-position: center center;
+    height: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+
+/* Navbar Starting */
+nav {
+    width: 100%;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    z-index: 40;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+
+.nav-item a {
+    font-size: 22px;
+    color: white !important;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.portfolio-btn {
+    background-color: transparent;
+    border: white;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+
+
+/******************** Bubble Section Starting *****************/
+
+.bubble-container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: turquoise;
+    opacity: 0.2;
+}
+
+.bubbles {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+.image-bubble {
+    margin: auto;
+    height: 100vh;
+}
+
+.bubbles :nth-child(1) img {
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    animation: bulbul 8s infinite;
+}
+
+.bubbles :nth-child(2) img {
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    animation: bulbul 5s infinite;
+}
+
+.bubbles :nth-child(3) img {
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    animation: bulbul 3s infinite;
+}
+
+.bubbles :nth-child(4) img {
+    width: 45px;
+    position: absolute;
+    bottom: 0;
+    animation: bulbul 7s infinite;
+}
+
+.bubbles :nth-child(5) img {
+    width: 25px;
+    position: absolute;
+    bottom: 0;
+    animation: bulbul 2s infinite;
+}
+
+.bubbles :nth-child(6) img {
+    width: 38px;
+    position: absolute;
+    bottom: 0;
+    animation: bulbul 6s infinite;
+}
+
+.bubbles :nth-child(7) img {
+    width: 32px;
+    position: absolute;
+    bottom: 0;
+    animation: bulbul 3s infinite;
+}
+
+.bubbles :nth-child(8) img {
+    width: 27px;
+    position: absolute;
+    bottom: 0;
+    animation: bulbul 8s infinite;
+}
+
+.bubbles :nth-child(9) img {
+    width: 18px;
+    position: absolute;
+    bottom: 0;
+    animation: bulbul 12s infinite;
+}
+
+@keyframes bulbul {
+    0% {
+        margin-bottom: 0%;
+        opacity: 0;
+    }
+
+    50% {
+        margin-bottom: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        margin-bottom: 100%;
+        opacity: 0;
+    }
+}
+
+
+
+
+/* Bubbles Ending */
+
+
+/* Content Section Starting */
+
+.content-container {
+    width: 100%;
+    padding: 20px auto;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 20;
+}
+
+.content {
+
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.content h1 {
+    color: white !important;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.content h1 span {
+
+    font-size: 180px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* HERE THE ****CONTENT**** SECTION ENDING */
+
+/* Social Link Container */
+
+.container-link{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+
+}
+
+.link-container{
+    width: 5%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0%;
+    display: flex;flex-direction: column;
+   
+}
+
+.social-links{
+    margin: auto;
+}
+.social-links img{
+    margin: 30px auto;
+    display: flex;
+}
+
+
+
+
+
+/* MEDIA QUERIES STARTING */
+
+
+@media (max-width:1024px){
+    .content h1 {
+        font-size: 50px;
+    }
+    
+    .content h1 span {
+        font-size: 150px;
+        font-family: 'Poppins', sans-serif;
+    
+    }
+    .link-container{
+        width: 10%;
+        height: 100vh; 
+    }
+    .social-links{
+        margin: auto;
+    }
+    .social-links img{
+       
+        width: 45px;
+    }
+}
+
+@media (max-width:769px){
+    .content h1 {
+        font-size: 40px;
+    }
+    
+    .content h1 span {
+        font-size: 100px;
+        font-family: 'Poppins', sans-serif;
+    
+    }
+    .link-container{
+        width: 10%;
+        height: 100vh; 
+    }
+    .social-links{
+        margin: auto;
+    }
+    .social-links img{
+       
+        width: 40px;
+    }
+}
+@media (max-width:426px){
+    .content h1 {
+        font-size: 30px;
+    }
+    
+    .content h1 span {
+        font-size: 70px;
+        font-family: 'Poppins', sans-serif;
+    
+    }
+    .link-container{
+        width: 13%;
+        height: 100vh; 
+    }
+    .social-links{
+        margin: auto;
+    }
+    .social-links img{
+       
+        width: 30px;
+    }
+
+    .bubbles :nth-child(1) img {
+        width: 30px;
+       
+    }
+    
+    .bubbles :nth-child(2) img {
+        width: 30px;
+     
+    }
+    
+    .bubbles :nth-child(3) img {
+        width: 35px;
+    
+    }
+    
+    .bubbles :nth-child(4) img {
+        width: 20px;
+      
+    }
+    
+    .bubbles :nth-child(5) img {
+        width: 25px;
+      
+    }
+    
+    .bubbles :nth-child(6) img {
+        width: 38px;
+       
+    }
+    
+    .bubbles :nth-child(7) img {
+        width: 32px;
+       
+    }
+    
+    .bubbles :nth-child(8) img {
+        width: 27px;
+     
+    }
+    
+    .bubbles :nth-child(9) img {
+        width: 18px;
+    
+    }
+}
+@media (max-width:325px){
+    .content h1 {
+        font-size: 22px;
+    }
+    
+    .content h1 span {
+        font-size: 50px;
+        font-family: 'Poppins', sans-serif;
+    
+    }
+    .link-container{
+        width: 10%;
+        height: 100vh; 
+    }
+    .social-links{
+        margin: auto;
+    }
+    .social-links img{
+       
+        width: 30px;
+    }
+    .navbar {
+    
+        padding: 15px;
+    
+    }
+}
